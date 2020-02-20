@@ -1,28 +1,51 @@
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.flexItems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 /* Mood section */
+
 .mood{
   width: 75px;
   height: 75px;
 
 }
 .moodButtons{
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
   
 }
-
-#moodSection{
-  display: flexbox;
-  justify-content: left;
+/* Sections */
+.moodSection{
+  display: flex;
+  align-self: flex-start;
   margin-top: 50px;
   margin-left: -175px;
+  
+}
+.commentSection{
+    display: flexbox;
+    align-self: flex-start;
+    margin-top: -371.25px;
 }
 
-/* /* Comment section  */
- #commentSection{
-  margin-top: 50px;
-} 
+.spotifySection{
+    display: flex;
+    justify-items: ;
+
+}
 
 .comments-details button.btn.dropdown-toggle,
 .comments-details .total-comments {
@@ -136,13 +159,12 @@
     margin-top: 15px;
 }
 
-/* Spotify section */
 
-#spotify{
-  display: flex;
-  justify-content: right;
-  
-}
+/* Footer */
+#sticky-footer {
+    flex-shrink: 0;
+    position:fixed
+  }
 
 /*======Responsive CSS=======*/
 @media (max-width: 767px){
