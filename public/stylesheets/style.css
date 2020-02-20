@@ -136,6 +136,14 @@
     margin-top: 15px;
 }
 
+/* Spotify section */
+
+#spotify{
+  display: flex;
+  justify-content: right;
+  
+}
+
 /*======Responsive CSS=======*/
 @media (max-width: 767px){
 .comments .commenter-name {
