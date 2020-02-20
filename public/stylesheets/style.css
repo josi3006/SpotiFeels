@@ -1,4 +1,15 @@
-form.signup,
-form.login {
-  margin-top: 50px;
+
+
+.mood{
+  width: 75px;
+  height: 75px;
+
 }
+.moodButtons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
