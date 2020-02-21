@@ -6,13 +6,6 @@ section{
 
 }
 
-.flexItems{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
 /* Mood section */
 
 .mood{
@@ -29,21 +22,24 @@ section{
 }
 /* Sections */
 .moodSection{
-  display: flex;
-  align-self: flex-start;
-  margin-top: 50px;
-  margin-left: -175px;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 50px;
+  
   
 }
 .commentSection{
-    display: flexbox;
-    align-self: flex-start;
-    margin-top: -371.25px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+   
 }
 
 .spotifySection{
     display: flex;
-    justify-items: ;
+    justify-content: flex-start;
+    margin-top: 50px;
+    
 
 }
 
@@ -161,10 +157,7 @@ section{
 
 
 /* Footer */
-#sticky-footer {
-    flex-shrink: 0;
-    position:fixed
-  }
+
 
 /*======Responsive CSS=======*/
 @media (max-width: 767px){
