@@ -21,29 +21,53 @@ section{
   
 }
 /* Sections */
+
 .moodSection{
     display: flex;
-    align-self: flex-start;
-    margin-top: 50px;
+    justify-content:  right;
+    margin-top: 25px;
   
   
 }
 .commentSection{
     display: flex;
-    justify-content: flex-start;
-    margin-top: 50px;
-   
+    justify-content: flex-end;
+    margin-top: 25px;
+    height: 100px; 
 }
 
 .spotifySection{
     display: flex;
-    justify-content: flex-start;
-    margin-top: 50px;
+    justify-content: center;
+    margin-top: 25px;
     
 
 }
 
-.comments-details button.btn.dropdown-toggle,
+
+
+.comment-wrapper .panel-body {
+    /* max-height:650px;
+    overflow:auto;
+    margin-top: 23px; */
+}
+
+.comment-wrapper .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+
+.comment-wrapper .media-list .media {
+    /* border-bottom:1px dashed #efefef;
+    margin-bottom:25px; */
+}
+
+
+
+
+
+/* .comments-details button.btn.dropdown-toggle,
 .comments-details .total-comments {
     font-size: 18px;
     font-weight: 500;
@@ -74,11 +98,11 @@ section{
     background-color: transparent;
     border: none;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 .comments .commenter-pic {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     display: inline-block;
     border-radius: 100%;
     border: 2px solid #fff;
@@ -169,4 +193,4 @@ section{
     width: 40px;
     height: 40px;
 }
-
+ */
