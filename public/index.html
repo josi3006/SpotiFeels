@@ -8,42 +8,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link href="stylesheets/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+<!-- Jumbotron -->
+  <div class="jumbotron">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src=""" alt="">
-        </a>
-    <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-          </ul>
-        </div>
-    </div>
-  </nav>
-
-  <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="..." alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Third slide">
-      </div>
-    </div>
-  </div> -->
-
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Spoti-Feels</h1>
+      <h1 class="display-5">Spoti-Feels</h1>
       <p class="lead">A music generator based on your mood. </p>
     </div>
   </div>
@@ -60,8 +30,10 @@
               <h5 class="card-title text-uppercase text-center">Whats your Mood?</h5>
               <h6 class="text-center"><span class="period">Choose one below</span></h6>
               <hr>
+
               <!-- Mood Buttons -->
               <div class="moodButtons">
+
                 <button id="happy">
                   <img class="mood" src="./img/Happy.png" />
                   <p>Happy</p>
@@ -86,13 +58,13 @@
                   <img class="mood" src="img/Sleepy.png" />
                   <p>Sleepy</p>
                 </button>
+
               </div>
             </div>
           </div>
         </section>
       </div>
 
-      <!-- </section>    -->
       <!-- Spotify Section -->
       
       <div class="col-sm-4">
@@ -107,80 +79,44 @@
       </div>
 
       <!-- Comment Section -->
-        <div class="col-md-4 col-md-offset-2 col-sm-4">
-            <div class="comment-wrapper">
-                <div class="panel panel-info">
-                    <div class="panel-body">
-                        <textarea class="form-control" placeholder="write a comment..." rows="3"></textarea>
-                        <br>
-                        <button type="button" class="btn btn-info pull-right">Post</button>
-                        <div class="clearfix"></div>
-                        <hr>
-                        <ul class="media-list">
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                  <!-- Figuring out how to attach a mood picture with the comment -->
-                                    <img src="./img/Happy.png" alt="" class="img-circle">
-                                </a>
-                                <div class="media-body">
-                                    <span class="text-muted pull-right">
-                                        <small class="text-muted">30 min ago</small>
-                                    </span>
-                                    <strong class="text-success">@MartinoMont</strong>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Lorem ipsum dolor sit amet, <a href="#">#consecteturadipiscing </a>.
-                                    </p>
-                                </div>
-                            </li>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-      
-    
-        </div>
-    </div>
-      <!-- <div class="col-sm-4">
-          <section class="commentSection">
-            <div class="card mb-5 mb-lg-0">
-              <div class="card-body">
-                <div class="comments">
-                  <div class="comments-details">
-                    <span class="total-comments comments-sort">117 Comments</span>
-                    <span class="dropdown">
-                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Sort By <span
-                          class="caret"></span></button>
-                      <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Top Comments</a>
-                        <a href="#" class="dropdown-item">Newest First</a>
-                      </div>
-                    </span>
-                  </div>
-                  <div class="comment-box add-comment">
-                    <span class="commenter-pic">
-                      <!-- <img src="/images/user-icon.jpg" class="img-fluid"> -->
-                    <!-- </span>
-                    <span class="commenter-name">
-                      <input type="text" placeholder="Add a public comment" name="Add Comment">
-                      <button type="submit" class="btn btn-default">Comment</button>
-                      <br>
-                      <button type="cancel" class="btn btn-default">Cancel</button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+  <div class="col-md-4 col-md-offset-2 col-sm-4">
+    <div class="comment-wrapper">
+      <div class="panel2 panel-info">
+        <div class="panel-body">
+            <textarea class="form-control" placeholder="write a comment..." rows="3"></textarea>
+            <br>
+            <button type="button" class="btn btn-secondary pull-right">Post</button>
+          <div class="clearfix"></div>
+            <hr>
+            <ul class="media-list">
+            <li class="media">
+            <a href="#" class="pull-left">
+<!-- Figuring out how to attach a mood picture with the comment -->
+            <img src="./img/Happy.png" alt="" class="img-circle">
+            </a>
+          <div class="media-body">
+            <span class="text-muted pull-right">
+            <small class="text-muted">30 min ago</small>
+            </span>
+            <strong class="text-success">@MartinoMont</strong>
+            <p class="comment"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet</p>
+          </div>
+            </li>
         </div>
       </div>
-  </div> --> 
+    </div>
+  </div>
+</div>
+</div>
+
 
   
   <!-- /.container -->
+
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/members.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="js/members.js"></script> -->
 </body>
 </html>
 
