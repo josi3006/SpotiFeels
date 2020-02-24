@@ -1,11 +1,22 @@
+.card-body{
+    background-image: url("../img/spotifeels.jpg");
+}
 
 .jumbotron{
-    background-color: #1ED760;
+    background-color: #52B95E;
     text-align: center;
+    background-image: url("../img/whitebanner.jpg");
+    background-size: contain;
+    background-position: center;
+    height: 300px;
+    border-radius: 2px;
+    border-bottom: black;
+    border-width: 5px;
 }
 
 body{
-    background-color: #1B1B1B;
+    background-color: black;
+    
 }
 
 section{
@@ -18,22 +29,38 @@ section{
 
 /* Mood section */
 #happy{
-    background-color: #1ED760;
+    background-color: #52B95E;
+    border-radius: 8px;
+    padding: 2px;
 }
 #sad{
-    background-color: #1ED760;
+    background-color: #52B95E;
+    border-radius: 8px;
+    padding: 2px;
 }
 #love{
-    background-color: #1ED760;
+    background-color: #52B95E;
+    border-radius: 8px;
+    padding: 2px;
 }
 #anger{
-    background-color: #1ED760;
+    background-color: #52B95E;
+    border-radius: 8px;
+    padding: 2px;
 }
 #chill{
-    background-color: #1ED760;
+    background-color: #52B95E;
+    border-radius: 8px;
+    padding: 2px;
 }
 #sleepy{
-    background-color: #1ED760;
+    background-color: #52B95E;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.btn .btn-success{
+    background-color: #52B95E;
 }
 
 .mood{
@@ -53,6 +80,7 @@ section{
     display: flex;
     justify-content:  right;
     margin-top: 25px;
+    
   
   
 }
@@ -81,7 +109,7 @@ section{
 .comment-wrapper .media-list .media img {
     width:64px;
     height:64px;
-    border:2px solid #1ED760;
+    border:2px solid ##52B95E;
 }
 
 .comment-wrapper .media-list .media {
@@ -94,7 +122,7 @@ section{
 
 .img-circle{
     margin-right: 10px;
-    background-color: #1ED760;
+    background-color: #52B95E;
 }
 
 
@@ -110,5 +138,4 @@ section{
 .comments .commenter-pic {
     width: 40px;
     height: 40px;
-}
- */
+} }
