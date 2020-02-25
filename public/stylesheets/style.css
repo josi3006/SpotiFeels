@@ -43,7 +43,7 @@ section{
 
 .spotifySection{
     display: flex;
-    justify-items: ;
+    justify-items: 
 
 }
 
@@ -175,5 +175,4 @@ section{
 .comments .commenter-pic {
     width: 40px;
     height: 40px;
-}
-
+}}
