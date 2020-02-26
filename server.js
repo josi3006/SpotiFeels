@@ -39,6 +39,7 @@ db.sequelize.sync().then(function () {
 
 
 
+const concertArr = [];
 
 
 axios
@@ -47,16 +48,31 @@ axios
 
     for (var i = 0; i < 5; i++) {
 
-      console.log(res.data._embedded.events[i]._embedded.venues[0].name);
-      console.log(res.data._embedded.events[i]._embedded.venues[0].city.name);
-      console.log(res.data._embedded.events[i]._embedded.venues[0].state.stateCode);
-      console.log(res.data._embedded.events[i].dates.start.localDate);
-      console.log(res.data._embedded.events[i].url);
+      const concertBuild = [
+        { venue: res.data._embedded.events[i]._embedded.venues[0].name },
+        { city: res.data._embedded.events[i]._embedded.venues[0].city.name },
+        { state: res.data._embedded.events[i]._embedded.venues[0].state.stateCode },
+        { date: res.data._embedded.events[i].dates.start.localDate },
+        { tixURL: res.data._embedded.events[i].url }
+      ];
+
+      concertArr.push(concertBuild);
 
     }
+
+    renderArr(concertArr);
+
   });
 
 
+
+function renderArr(concertArr) {
+
+  console.log('---------------------------------');
+  console.log('Here\'s the array of concert info:');
+  console.log(concertArr);
+
+};
 
 
 
