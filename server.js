@@ -39,19 +39,21 @@ db.sequelize.sync().then(function () {
 
 
 
-   
 
 
 axios
-  .get("https://app.ticketmaster.com/discovery/v2/events?apikey=iXu9lOdavOsqh6jwxD8dkn36Ify7D1MI&keyword=tame%20impala&locale=*&countryCode=US")
-  .then(function(res) {
-    console.log(res.data._embedded.events[0]._embedded.venues[0].name);
-    console.log(res.data._embedded.events[0]._embedded.venues[0].city.name);
-    console.log(res.data._embedded.events[0]._embedded.venues[0].state.stateCode);
-    console.log(res.data._embedded.events[0].dates.start.localDate);
-    console.log(res.data._embedded.events[0].url);
+  .get("https://app.ticketmaster.com/discovery/v2/events?apikey=iXu9lOdavOsqh6jwxD8dkn36Ify7D1MI&keyword=tame%20impala&latlong=37.5262816,-77.4490921&locale=*&sort=distance,asc")
+  .then(function (res) {
 
+    for (var i = 0; i < 5; i++) {
 
+      console.log(res.data._embedded.events[i]._embedded.venues[0].name);
+      console.log(res.data._embedded.events[i]._embedded.venues[0].city.name);
+      console.log(res.data._embedded.events[i]._embedded.venues[0].state.stateCode);
+      console.log(res.data._embedded.events[i].dates.start.localDate);
+      console.log(res.data._embedded.events[i].url);
+
+    }
   });
 
 
