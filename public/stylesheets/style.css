@@ -99,43 +99,25 @@ section{
 
 }
 
+/* Comments  */
 
-.comment-wrapper .panel-body {
-    max-height:650px;
-    overflow:auto;
-    margin-top: 26px;
+.commentButton{
+    margin-top: 5px;
+    color: #52B95E;
 }
 
-.comment-wrapper .media-list .media img {
-    width:64px;
-    height:64px;
-    border:2px solid ##52B95E;
+.commentTitle {
+    color: #52B95E;
 }
 
-.comment-wrapper .media-list .media {
-    /* border-bottom:1px dashed #efefef;
-    margin-bottom:25px; */
-}
-.comment{
-    color: white;
-}
-
-.img-circle{
-    margin-right: 10px;
-    background-color: #52B95E;
-}
-
-
-/* Footer */
-
-
-/*======Responsive CSS=======*/
-@media (max-width: 767px){
-.comments .commenter-name {
-    font-size: 13px;
-    top: -5px;
-}
-.comments .commenter-pic {
-    width: 40px;
-    height: 40px;
-} }
+.comment {
+    padding: 10px;
+    margin: 10px;
+    background-color: #e8f9ff;
+  }
+  
+  .cool-font {
+    font-family: Shrikhand, cursive;
+    font-size: 24px;
+    color: #52B95E;
+  }
