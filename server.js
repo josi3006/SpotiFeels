@@ -26,8 +26,77 @@ require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
 // Syncing our database and logging a message to the user upon success
-db.sequelize.sync().then(function() {
-  app.listen(PORT, function() {
+db.sequelize.sync().then(function () {
+  app.listen(PORT, function () {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
   });
 });
+
+
+// https://app.ticketmaster.com/discovery/v2/events?apikey=iXu9lOdavOsqh6jwxD8dkn36Ify7D1MI&keyword=tame%20impala&postalCode=23221&radius=100&locale=*
+
+
+
+var accessToken = "BQBQxCjBmMVAyLT4VX9CRNnQesmY5BwwmWsysBFimbng6MeTJIcDkEGmd_ClToARymd_BM11BGVWp63BUwepPYQHf6YMT4ILZYRykhp5kOGqUU-7odErZo2_ZzxD71HDreYeFVsZStjDMb8JEO4kfTO5OA6dEbdoZuc7c1C7qwOGG3D2eKdj0dY";
+const fetch = require('node-fetch');
+
+
+
+// $.ajax({
+//   type:"GET",
+//   url:"https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=iXu9lOdavOsqh6jwxD8dkn36Ify7D1MI",
+//   async:true,
+//   dataType: "json",
+//   success: function(json) {
+//               console.log(json);
+//               // Parse the response.
+//               // Do other things.
+//            },
+//   error: function(xhr, status, err) {
+//               // This time, we do not end up here!
+//            }
+// });
+
+
+
+
+
+// console.log('Here i am');
+
+https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=iXu9lOdavOsqh6jwxD8dkn36Ify7D1MI
+
+
+// fetch('https://app.ticketmaster.com/discovery/v2/events?apikey=iXu9lOdavOsqh6jwxD8dkn36Ify7D1MI&keyword=tame%20impala&locale=*', {
+
+  fetch('https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=iXu9lOdavOsqh6jwxD8dkn36Ify7D1MI', {
+
+  method: 'GET', headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer ' + accessToken 
+  }
+})
+
+  .then(function (response) {
+    return response.json()
+  })
+
+  .then(function (res2) {
+
+  console.log('check it out:');
+  console.log(res2);
+
+
+  })
+
+  .catch(function (error) {
+    console.log(error);
+  });
+
+
+
+
+
+
+
+
