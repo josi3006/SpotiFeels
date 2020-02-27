@@ -1,148 +1,148 @@
 -- Innerspeaker
-INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Innerspeaker', 'It Is Not Meant to Be',);
+INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Innerspeaker', 'It Is Not Meant to Be', 1 );
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Innerspeaker', 'Desire Be Desire Go',);
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Innerspeaker', 'Desire Be Desire Go',6);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Innerspeaker', "Alter Ego",);
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Innerspeaker', "Alter Ego", 6);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Innerspeaker', "Lucidity",);
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Innerspeaker', "Lucidity", 4);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Innerspeaker', "Why Won't You Make Up Your Mind?",);
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Innerspeaker', "Why Won't You Make Up Your Mind?", 3);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Innerspeaker', 'Solitude Is Bliss',);
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Innerspeaker', 'Solitude Is Bliss', 2);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Innerspeaker', "Jeremy's Storm",);
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Innerspeaker', "Jeremy's Storm", 4);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Innerspeaker',"Expectation",);
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Innerspeaker',"Expectation",2);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Innerspeaker', "The Bold Arrow of Time");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Innerspeaker', "The Bold Arrow of Time", 4);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Innerspeaker', "Runway, Houses, City, Clouds");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Innerspeaker', "Runway, Houses, City, Clouds", 6);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Innerspeaker', "I Don't Really Mind");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Innerspeaker', "I Don't Really Mind", 4);
 
 
 --  Lonerism
-INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"Be Above It");
+INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"Be Above It",4);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"Endors Toi");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"Endors Toi",6);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"Apocalypse Dreams");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"Apocalypse Dreams",1);
  
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"Mind Mischief");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"Mind Mischief",2);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"Music to Walk Home By");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"Music to Walk Home By",6);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"Why Won't They Talk to Me?");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"Why Won't They Talk to Me?",6);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"Feels Like We Only Go Backwards");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"Feels Like We Only Go Backwards",2);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"Keep on Lying");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"Keep on Lying",4);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"Elephant");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"Elephant",4);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"She Just Won't Believe Me");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"She Just Won't Believe Me",2);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"Nothing That Has Happened So Far Has Been Anything We Could Control");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"Nothing That Has Happened So Far Has Been Anything We Could Control",5);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Lonerism',"Sun's Coming Up");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Lonerism',"Sun's Coming Up", 5);
 
 --  Currents
-INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' , "Let It Happen");
+INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' , "Let It Happen", 2);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"Nangs");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"Nangs",6);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"The Moment"); 
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"The Moment", 4); 
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"Yes I'm Changing");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"Yes I'm Changing", 1);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"Eventually");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"Eventually", 2);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"Gossip"); 
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"Gossip",4); 
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"The Less I Know the Better");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"The Less I Know the Better",4);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"Past Life");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"Past Life",5);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"Disciples"); 
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"Disciples",3); 
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"Cause I'm a Man");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"Cause I'm a Man",1);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"Reality in Motion");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"Reality in Motion",6);
 
- INSERT INTO artist(artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"Love/Paranoia"); 
+ INSERT INTO tameimpala(artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"Love/Paranoia", 3); 
 
-INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'Currents' ,"New Person, Same Old Mistakes");
+INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'Currents' ,"New Person, Same Old Mistakes",4);
 
 -- The Slow Rush
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"One More Year");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"One More Year",1);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"Instant Destiny");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"Instant Destiny",3);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"Borderline");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"Borderline",1);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"Posthumous Forgiveness");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"Posthumous Forgiveness",4);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"Breathe Deeper");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"Breathe Deeper",5);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"Tomorrow’s Dust");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"Tomorrow’s Dust",5);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"On Track");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"On Track",6);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"Lost in Yesterday");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"Lost in Yesterday",5);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"Is It True");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"Is It True",5);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"It Might Be Time");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"It Might Be Time",3);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"Glimmer");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"Glimmer",6);
 
- INSERT INTO artist (artist_name, album_name, song_name, mood_id)
- VALUES ('Tame Impala', 'The Slow Rush' ,"One More Hour");
+ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
+ VALUES ('Tame Impala', 'The Slow Rush' ,"One More Hour",6);
