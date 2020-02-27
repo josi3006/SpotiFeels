@@ -1,3 +1,4 @@
+/* Html CSS */
 body{
     font-family: 'Spartan';
 
@@ -13,13 +14,29 @@ section{
 
 
 
-/* Mood section */
+/* Mood Card */
+
 .moodChoice{
     text-align: center;
     color: white;
     font-family: 'Spartan';
     font-weight: bold;
 }
+
+/* Mood Buttons */
+.mood{
+    width: 75px;
+    height: 75px;
+  
+}
+
+.moodButtons{
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 #happy{
     background-color: #52B95E;
     border-radius: 8px;
@@ -52,17 +69,7 @@ section{
     padding: 2px;
 }
 
-.mood{
-  width: 75px;
-  height: 75px;
-
-}
-.moodButtons{
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
+/* Comment Buttons */
 
 .leaveComment{
     display: flex;
@@ -90,15 +97,6 @@ section{
     display: flex;
     justify-content:  space-evenly;
     margin-top: 25px;
-    
-  
-  
-}
-.commentSection{
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    height: 100px; 
 }
 
 .songSection{
@@ -112,32 +110,12 @@ section{
     display: flex;
     justify-content: center;
     margin-top: 25px;
-    
-
 }
 
-/* Comments  */
-
-.commentButton{
-    margin-top: 5px;
-    color: #52B95E;
-}
-
-.commentTitle {
-    color: #52B95E;
-}
-
-.comment {
-    padding: 10px;
-    margin: 10px;
-    background-color: #e8f9ff;
-  }
-  
-  .cool-font {
-    font-family: 'Spartan';
-    font-size: 24px;
+#pickedSong{
     color: white;
-  }
+    text-align: center;
+}
 
   /* Background CSS */
   * {
