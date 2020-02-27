@@ -35,6 +35,16 @@ section{
     transition: all 0.5s ease 0s;
 }
 
+.form-control{
+    color: white;
+    background: none;
+    font-weight: bold;
+}
+.form-control:focus{
+    outline-color: white !important;
+    background: none;
+}
+
 
 /* Sections */
 
@@ -61,12 +71,12 @@ section{
     padding: 10px;
     margin: 10px;
     background-color: #e8f9ff;
-  }
+}
 
   .fontColor{
-      color:white
-      
-  }
+      color:white;
+      font-weight: bolder;
+}
   
 
   /* Background CSS */
