@@ -2,37 +2,55 @@
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
+  <title>.LUCIDITY--Comments</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="stylesheets/comment.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spartan:200&display=swap" rel="stylesheet">
 </head>
 
-<div class="col-sm-8 col-sm-offset-2">
-  <p class="cool-font">Name</p>
-    <input class="form-control" type="text" id="author" placeholder="Enter Your Name">
-      <br>
-  <p class="cool-font">Comment</p>
-    <textarea class="form-control" rows="3" id="comment-box" placeholder="Enter Comment Here!"></textarea>
-    <button id="comment-submit" class="btn btn-lg-success pull-left">Submit!</button>
-</div>
-</div>
+<body>
 
-      
-        <div class="col-sm-4">
-          <h2 class="commentTitle">Comments</h2>
-          <hr>
-          <div id="comment-area"></div>
+
+<div class="stars">
+  <div class="twinkling">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          </button>
+          <a class="navbar-brand" href="./index.html">.Lucidity</a>
         </div>
+      </div>
+    </nav>
+    <div class="container">
+   
+        <div class="commentSection">
+          <div class="col-xl-8 ">
+            <p class="fontColor">Name</p>
+              <input class="form-control" type="text" id="commentName" placeholder="Enter Your Name">
+              <br>
+            <p class="fontColor">Mood</p>
+              <input class="form-control" type="text" id="commentMood" placeholder="What's Your Mood?">
+              <br>
+            <p class="fontColor">Song Title</p>
+              <input class="form-control" type="text" id="commentSong" placeholder="What Song Did You Listen To?">
+              <br>
+            <p class="fontColor">Comment</p>
+              <textarea class="form-control" rows="3" id="comment" placeholder="Enter Comment Here!"></textarea>
+              <a id="postComment">Post Your Comment</a> 
+            </div>
+      </div>
       
+        <script type="text/javascript" src="js/comment.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/signup.js"></script>
 
- 
+      </div>
+    </div>
 
-  <script type="text/javascript" src="js/comment.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/signup.js"></script>
 
 </body>
 

@@ -1,51 +1,76 @@
-/* Lucidity Header */
-.banner{
-    color: white;
-    transition: all 2.5s ease 0s;
+/* HTML CSS */
+body{
     font-family: 'Spartan';
-    text-align: center;
-    font-size: 100px;
-
-}
-.motto{
-    font-family: 'Spartan'; 
-    transition: all 2.5s ease 0s;
-    color: white;
-    text-align: center;
-}
-
-.centerLucidity{
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
-    margin-top:44%;
-    margin-bottom:0%";
+   
 
 }
 
-.enterButton{
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* Button CSS */
+
+#postComment{
+    display: flex;
+    justify-content: center;
     font-family: 'Spartan';
     font-weight: bold;
-    color: black;
+    color: white;
     padding: 20px;
     border: 4px solid white;
     border-radius: 6px;
-    display: inline-block;
     margin-top:10px;
 }
 
-.enterButton:hover{
+#postComment:hover{
     color: black;
     background: white;
     font-family: 'Spartan';
     text-decoration: none;
-    transition: all 2.5s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 
+/* Sections */
 
-/* Background CSS */
-* {
+.commentSection{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    height: 100px; 
+}
+
+
+/* Comments  */
+
+.commentButton{
+    margin-top: 5px;
+    color: #52B95E;
+}
+
+.commentTitle {
+    color: #52B95E;
+}
+
+.comment {
+    padding: 10px;
+    margin: 10px;
+    background-color: #e8f9ff;
+  }
+
+  .fontColor{
+      color:white
+      
+  }
+  
+
+  /* Background CSS */
+  * {
     margin: 0;
     padding: 0;
 }
@@ -154,4 +179,12 @@ header a, a:visited {
 
   @-ms-viewport {
     width: device-width ;
+} 
+@viewport {
+    width: device-height ;
+    zoom: 1.0 ;
   }
+
+  @-ms-viewport {
+    width: device-height ;
+} 

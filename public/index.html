@@ -1,110 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>About: Spotifeels</title>
+  <title>.LUCIDITY</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spartan:200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<!-- Jumbotron -->
-  <div class="jumbotron">
+
+<div class="stars">
+  <div class="twinkling">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          </button>
+          <a class="navbar-brand" href="./index.html">.Lucidity</a>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
-      <!-- <h1 class="display-5">Spoti-Feels</h1>
-      <p class="lead">A music generator based on your mood. </p> -->
-    </div>
-  </div>
 
-  
-  <!-- Mood Button Section -->
-  <div class="container">
-
-    <div class="row">
-      <!-- COLUMN 1 -->
-      <div class="col-sm-4">
-        <section class="moodSection">
-          <div class="card mb-5 mb-lg-0">
+      <div class="row">
+        <!-- COLUMN 1 -->
+        <div class="col-sm-4">
+          <section class="moodSection">
+            <div class="card-transparent">
             <div class="card-body">
-              <h5 class="card-title text-uppercase text-center">Whats your Mood?</h5>
-              <h6 class="text-center"><span class="period">Choose one below</span></h6>
-              <hr>
+                <h5 class="moodChoice">Whats your Mood?</h5>
+                <hr>
+  
+                <!-- Mood Buttons -->
+                <div class="moodButtons">
+  
+                  <button class="btn btn-success" id="happy">
+                    <img class="mood" src="./img/Happy.png" />
+                    <p>Happy</p>
+                  </button>
 
-              <!-- Mood Buttons -->
-              <div class="moodButtons">
+                  <button class="btn btn-success" id="sad">
+                    <img class="mood" src="./img/Sad.png" />
+                    <p>Sad</p>
+                  </button>
 
-                <button class="btn btn-success" id="happy">
-                  <img class="mood" src="./img/Happy.png" />
-                  <p>Happy</p>
-                </button>
-                <button class="btn btn-success" id="sad">
-                  <img class="mood" src="./img/Sad.png" />
-                  <p>Sad</p>
-                </button>
-                <button class="btn btn-success" id="love">
-                  <img class="mood" src="./img/Love.png" />
-                  <p>Love</p>
-                </button>
-                <button class="btn btn-success" id="anger">
-                  <img class="mood" src="./img/Anger.png" />
-                  <p>Anger</p>
-                </button>
-                <button class="btn btn-success" id="chill">
-                  <img class="mood" src="./img/Chill.png" />
-                  <p>Chill</p>
-                </button>
-                <button class="btn btn-success" id="sleepy">
-                  <img class="mood" src="img/Sleepy.png" />
-                  <p>Sleepy</p>
-                </button>
+                  <button class="btn btn-success" id="love">
+                    <img class="mood" src="./img/Love.png" />
+                    <p>Love</p>
+                  </button>
 
+                  <button class="btn btn-success" id="anger">
+                    <img class="mood" src="./img/Anger.png" />
+                    <p>Anger</p>
+                  </button>
+
+                  <button class="btn btn-success" id="chill">
+                    <img class="mood" src="./img/Chill.png" />
+                    <p>Chill</p>
+                  </button>
+
+                  <button class="btn btn-success" id="sleepy">
+                    <img class="mood" src="img/Sleepy.png" />
+                    <p>Sleepy</p>
+                  </button>
+                </div>
+                
+                <a href="comment.html" class="leaveComment">Leave A Comment</a> 
+              </div>
+              </div>
+              </section>
+        
+        </div>
+  
+        <!-- Matched Song Section -->
+        
+        <div class="col-sm-4">
+          <section class="spotifySection">
+            <div class="card-transparent">
+              <div class="card-body">
+                <h5 class="moodChoice">Your Matched Song!</h5>
+                <hr>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-
-      <!-- Matched Song Section -->
-      
-      <div class="col-sm-4">
-        <section class="spotifySection">
-          <div class="card mb-5 mb-lg-0">
-            <div class="card-body">
-              <h5 class="card-title text-uppercase text-center">Your Matched Song!</h5>
-              <hr>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <!-- Spotify section -->
-
-      <div class="col-sm-4">
-        <section class="spotifySection">
-          <div>
-            <iframe src="https://open.spotify.com/embed/playlist/7ia3zi1nSeoDPsY4IHIHrR" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </div>
-        </section>
-      </div>
-
-
-
-      <div  class="col-lg-12">
-        <section class="commentButton">
-          <button href="*" type="button" class="btn btn-success btn-lg btn-block">Leave A Comment</button>
-        </section>
-      </div>
-
-
+          </section>
+        </div>
   
-  <!-- /.container -->
+        <!-- Spotify section -->
+  
+        <div class="col-sm-4">
+          <section class="spotifySection">
+            <div>
+              <iframe src="https://open.spotify.com/embed/playlist/7ydCJXe2rpIkDUuUM8tYR6" width="400" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </section>
+        </div>
+  
+  
+    
+    <!-- /.container -->
+  
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="js/members.js"></script> -->
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-  <!-- <script type="text/javascript" src="js/members.js"></script> -->
+
+
+
+
+
+  </div>
+</div>
+
 </body>
 </html>
 
