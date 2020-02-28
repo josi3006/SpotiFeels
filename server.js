@@ -1,79 +1,64 @@
-// Requiring necessary npm packages
-var express = require("express");
-var session = require("express-session");
-const axios = require("axios");
-
-// Requiring passport as we've configured it
-// var passport = require("./config/passport");
-var testcommit = 'john';
-
-console.log(testcommit);
-// Setting up port and requiring models for syncing
-var PORT = process.env.PORT || 8080;
-var db = require("./models");
-
-// Creating express app and configuring middleware needed for authentication
 var app = express();
+var mysql = require("mysql");
+var express = require("express");
+var exphbs = require("express-handlebars");
+
+app.use(express.static("public"));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("public"));
-// We need to use sessions to keep track of our user's login status
-app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
 
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
-// Requiring our routes
-// require("./routes/html-routes.js")(app);
-require("./routes/api-routes.js")(app);
+var connection = mysql.createConnection({
+  host: "localhost",
+  port: 3306,
+  user: "root",
+  password: "Freedom123!",
+  database: "tamedb"
+});
 
-// Syncing our database and logging a message to the user upon success
-db.sequelize.sync().then(function () {
-  app.listen(PORT, function () {
-    console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
+connection.connect(function(err) {
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
+  }
+  console.log("connected as id " + connection.threadId);
+});
+
+app.get("/api/all", function(req, res) {
+  connection.query("SELECT * FROM comment;", function(err, data) {
+    if (err) {
+      return res.status(500).end();
+    }
+
+    res.render("index", { comment: data });
   });
 });
 
-
-
-
-
-
-const concertArr = [];
-
-
-axios
-  .get("https://app.ticketmaster.com/discovery/v2/events?apikey=iXu9lOdavOsqh6jwxD8dkn36Ify7D1MI&keyword=tame%20impala&latlong=37.5262816,-77.4490921&locale=*&sort=distance,asc")
-  .then(function (res) {
-
-    for (var i = 0; i < 5; i++) {
-
-      const concertBuild = [
-        { venue: res.data._embedded.events[i]._embedded.venues[0].name },
-        { city: res.data._embedded.events[i]._embedded.venues[0].city.name },
-        { state: res.data._embedded.events[i]._embedded.venues[0].state.stateCode },
-        { date: res.data._embedded.events[i].dates.start.localDate },
-        { tixURL: res.data._embedded.events[i].url }
-      ];
-
-      concertArr.push(concertBuild);
-
+app.get("/:id", function(req, res) {
+  connection.query("SELECT * FROM tameimpala where mood_id = ? ORDER BY RAND() LIMIT 1", [req.params.id], function(err, data) {
+    if (err) {
+      return res.status(500).end();
     }
 
-    renderArr(concertArr);
-
+    console.log(data);
+    res.render("single-quote", data[0]);
   });
+});
 
+app.post("/api/new", function(req, res) {
+  connection.query("INSERT INTO comment (name, songtitle, comment) VALUES (?, ?, ?)", [req.body.name, req.body.songtitle, req.body.comment], function(
+    err,
+    result
+  ) {
+    if (err) {
+      // If an error occurred, send a generic server failure
+      return res.status(500).end();
+    }
 
-
-function renderArr(concertArr) {
-
-  console.log('---------------------------------');
-  console.log('Here\'s the array of concert info:');
-  console.log(concertArr);
-
-};
-
-
-
-
-
-
+    // Send back the ID of the new quote
+    res.json({ id: result.insertId });
+  });
+});
