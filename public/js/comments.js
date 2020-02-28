@@ -1,4 +1,5 @@
 /* global moment */
+const comment = require("Comment")
 
 // When user clicks add-btn
 $("#postComment").on("click", function(event) {

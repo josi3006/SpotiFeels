@@ -2,10 +2,11 @@
 var express = require("express");
 var session = require("express-session");
 const axios = require("axios");
+const comment = require("./models/comment")
 
 // Requiring passport as we've configured it
 // var passport = require("./config/passport");
-var testcommit = 'john';
+var testcommit = 'Welcome to .Lucidity';
 
 console.log(testcommit);
 // Setting up port and requiring models for syncing
