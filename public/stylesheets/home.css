@@ -52,43 +52,43 @@ section{
 }
 
 .moodButtons{
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
 #happy{
-    background-color: #52B95E;
+    background-color: #828282;
     border-radius: 8px;
     padding: 2px;
-    justify-content: space-around;
 }
 #sad{
-    background-color: #52B95E;
+    background-color: #828282;
     border-radius: 8px;
     padding: 2px;
 }
 #love{
-    background-color: #52B95E;
+    background-color: #828282;
     border-radius: 8px;
     padding: 2px;
 }
 #anger{
-    background-color: #52B95E;
+    background-color: #828282;
     border-radius: 8px;
     padding: 2px;
 }
 #chill{
-    background-color: #52B95E;
+    background-color: #828282;
     border-radius: 8px;
     padding: 2px;
 }
 #sleepy{
-    background-color: #52B95E;
+    background-color: #828282;
     border-radius: 8px;
     padding: 2px;
 }
+
 
 /* Comment Buttons */
 
