@@ -1,5 +1,10 @@
 // Routes
 // =============================================================
+
+
+
+// Comment routes
+
 module.exports = function(app) {
 
   // Get all comments
