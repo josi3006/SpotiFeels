@@ -19,7 +19,7 @@ module.exports = function(app) {
   // Add a comment
   app.post("/api/new", function(req, res) {
 
-    console.log("COmment Data");
+    console.log("Comment Data");
     console.log(req.body);
 
     Comment.create({

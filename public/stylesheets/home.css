@@ -12,6 +12,27 @@ section{
 
 }
 
+/* Concert BUttons */
+.concerts{
+    display: flex;
+    justify-content: center;
+    font-family: 'Spartan';
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+    border: 4px solid white;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.concerts:hover{
+    color: black;
+    background: white;
+    font-family: 'Spartan';
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+
+
 
 
 /* Mood Card */
