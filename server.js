@@ -8,7 +8,6 @@ const axios = require("axios");
 var testcommit = 'john';
 
 console.log(testcommit);
-
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
 var db = require("./models");
@@ -23,7 +22,7 @@ app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true 
 
 
 // Requiring our routes
-require("./routes/html-routes.js")(app);
+// require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
 // Syncing our database and logging a message to the user upon success
