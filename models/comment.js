@@ -15,6 +15,9 @@ var Comment = sequelize.define("comment", {
   created_at: Sequelize.DATE
 });
 
+
+
+
 // Syncs with DB
 Comment.sync();
 
