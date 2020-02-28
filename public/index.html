@@ -37,6 +37,16 @@
   
                 <!-- Mood Buttons -->
                 <div class="moodButtons">
+                  
+<!-- Each button should have an anchor tag and each anchor needs href
+href is route for mood query (GET request) /api/mood/:mood
+LET mood = .params.mood
+
+I.E. : Querying the "happy" mood: href="/api/mood/happy"
+	app.get("/api/mood/:mood", function(req, res) {
+		let mood = req.params.mood;
+		db.query
+	}); -->
   
                   <button class="btn btn-success moodButton" id="happy" data-mood = "1">
                     <img class="mood" src="./img/Happy.png" />

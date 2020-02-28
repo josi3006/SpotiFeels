@@ -23,11 +23,13 @@ $(window).on("load", () => {
             var mood = $(this).data("mood");
             console.log(mood);
             var queryString = "SELECT * FROM tameimpala WHERE mood_id = ?  ORDER BY Rand() LIMIT 1";
+           
+            // connection query needs to be defined
             connection.query(queryString, [mood], function (err, result) {
                 if (err) throw err;
                 cb(result);
                 console.log(this)
-            })
-        })
-    })
-})
+            });
+        });
+    });
+});
