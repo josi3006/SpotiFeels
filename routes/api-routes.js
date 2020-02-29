@@ -1,5 +1,10 @@
 // Routes
 // =============================================================
+
+
+
+// Comment routes
+
 module.exports = function(app) {
 
   // Get all comments
@@ -28,7 +33,7 @@ module.exports = function(app) {
       mood: req.body.mood,
       songtitle: req.body.songtitle,
       comment: req.body.commentBody,
-      created_at: req.body.created_at
+      // created_at: req.body.created_at
     }).then(function(results) {
       // `results` here would be the newly created comment
       res.end();
