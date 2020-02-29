@@ -58,6 +58,11 @@ section{
 
 /* Comments  */
 
+.comments-title{
+    color: white;
+    font-family: 'Spartan';
+}
+
 .commentButton{
     margin-top: 5px;
     color: #52B95E;
@@ -79,9 +84,10 @@ section{
 }
 
 .comment-container{
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
+   padding-right: 0;
+   padding-left: 0;
+
+
 }
   
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 $(window).on("load", () => {
@@ -21,6 +22,8 @@ $(window).on("load", () => {
     });
 });
 =======
+=======
+>>>>>>> 1f9e307e93508424e31003bab4fbcae089b9548e
 function (mood, cb) {
     $(".moodButtons").on("click", function (event) {
         event.preventDefault();
