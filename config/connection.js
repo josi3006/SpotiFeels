@@ -14,5 +14,15 @@ var sequelize = new Sequelize("tamedb", "root", "!@Galaxy", {
   }
 });
 
+if (process.env.jawsdb_url) {
+  connection = mysql.createConnection(process.env.jawsdb_url)
+} else {
+  connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'password',
+    database: 'tamedb'
+  });
+}
 // Exports the connection for other files to use
 module.exports = sequelize;
