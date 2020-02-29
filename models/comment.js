@@ -1,9 +1,8 @@
 
-
 // This may be confusing but here Sequelize (capital) references the standard library
 var Sequelize = require("sequelize");
 // sequelize (lowercase) references our connection to the DB.
-var sequelize = require("../config/connection.js/index.js");
+var sequelize = require("../config/connection.js");
 
 // Creates a "comment" model that matches up with DB
 var Comment = sequelize.define("comment", {
@@ -13,6 +12,9 @@ var Comment = sequelize.define("comment", {
   comment:  Sequelize.STRING,
   created_at: Sequelize.DATE
 });
+
+console.log(Comment);
+
 
 
 

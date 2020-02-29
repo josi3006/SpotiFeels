@@ -48,12 +48,12 @@ section{
 
 /* Sections */
 
-.commentSection{
+/* .commentSection{
     display: flex;
     justify-content: flex-start;
     margin-top: 25px;
     height: 100px; 
-}
+} */
 
 
 /* Comments  */
@@ -82,9 +82,12 @@ section{
       color:white;
       font-weight: bolder;
 }
+
 .comment-container{
    padding-right: 0;
    padding-left: 0;
+
+
 }
   
 
@@ -153,7 +156,7 @@ header a, a:visited {
 }
 
 .stars, .twinkling, .clouds {
-  position:absolute;
+  position: fixed;
   top:0;
   left:0;
   right:0;

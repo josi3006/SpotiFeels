@@ -1,33 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Spartan:200&display=swap" rel="stylesheet">
-    <link href="stylesheets/landingpage.css" rel="stylesheet">
-    <title>.LUCIDITY</title>
+  
+  <title>.LUCIDITY</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="stylesheets/home.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spartan:200&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 </head>
 <body>
 
 <div class="stars">
-    <div class="twinkling">
-        <div class="container lucidity-container">
-                <div class="row"></div>
-                <div class="card-transparent">
-                    <div class="card-body">
-                 <div class="centerLucidity">
-                <h1 class="banner">.LUCIDITY</h1>
-                <p class="motto">Where Your Mood and Tame Impala Meet.
-                </br>
-                    <a href="home.html" class="enterButton">Enter</a> 
-                </p>
-                </div>
+
+  <div class="twinkling">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          </button>
+          <a class="navbar-brand" href="./index.html">.Lucidity</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="row">
+        <!-- COLUMN 1 -->
+        <div class="col-sm-4">
+          <section class="moodSection">
+            <div class="card-transparent">
+            <div class="card-body">
+                <h5 class="moodChoice">Whats your Mood?</h5>
+                <hr>
+  
+                <!-- Mood Buttons -->
+                <div class="moodButtons">
+  
+                  <button class="btn btn-success moodButton" id="happy" data-mood = "1">
+                    <img class="mood" src="./img/Happy.png" />
+                  
+                    <p>Happy</p>
+                  </button>
+
+                  <button class="btn btn-success moodButton" id="sad" data-mood = "2">
+                    <img class="mood" src="./img/Sad.png" />
+                    <!-- mood id: 2 -->
+                    <p>Sad</p>
+                  </button>
+
+                  <button class="btn btn-success moodButton" id="love" data-mood = "3">
+                    <img class="mood" src="./img/Love.png" />
+                    <!-- mood id: 3 -->
+                    <p>Love</p>
+                  </button>
+
+                  <button class="btn btn-success moodButton" id="anger" data-mood = "4">
+                    <img class="mood" src="./img/Anger.png" />
+                    <!-- mood id: 4 -->
+                    <p>Anger</p>
+                  </button>
+
+                  <button class="btn btn-success moodButton" id="chill" data-mood = "5">
+                    <img class="mood" src="./img/Chill.png" />
+                    <!-- mood id: 5 -->
+                    <p>Chill</p>
+                  </button>
+
+                  <button class="btn btn-success moodButton" id="sleepy" data-mood = "6">
+                    <img class="mood" src="img/Sleepy.png" />
+                    <!-- mood id: 6 -->
+                    <p>Sleepy</p>
+
+
+
+
+<!-- // TEST BUTTON -->
+                    <button class="btn btn-success" id="go-btn" data-mood = "6">
+                      <img class="mood" src="img/Sleepy.png" />
+                      <!-- mood id: 6 -->
+                      <p>concerts</p>
+                    </button>
+
+
+
+
+                  </button>
+
                 </div>
             </div>
-        </div>
-    </div>
+            </div>
+  
+    
+
+    <!-- /.container -->
+  
+    
+
+
+
+
+  </div>
 </div>
+
+<!-- Scripts -->
+<script type="text/javascript" src="../models/ticketmaster.js"></script>
+
+<script src="testscript.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+
+
+
 
 </body>
 
