@@ -11,6 +11,94 @@
 <body>
 
 <div class="stars">
+<<<<<<< HEAD
+
+  <div class="twinkling">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          </button>
+          <a class="navbar-brand" href="./index.html">.Lucidity</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="row">
+        <!-- COLUMN 1 -->
+        <div class="col-sm-4">
+          <section class="moodSection">
+            <div class="card-transparent">
+            <div class="card-body">
+                <h5 class="moodChoice">Whats your Mood?</h5>
+                <hr>
+  
+                <!-- Mood Buttons -->
+                <div class="moodButtons">
+                  
+<!-- Each button should have an anchor tag and each anchor needs href
+href is route for mood query (GET request) /api/mood/:mood
+LET mood = .params.mood
+
+I.E. : Querying the "happy" mood: href="/api/mood/happy"
+	app.get("/api/mood/:mood", function(req, res) {
+		let mood = req.params.mood;
+		db.query
+	}); -->
+  
+                  <button class="btn btn-success moodButton" id="happy" data-mood = "1">
+                    <img class="mood" src="./img/Happy.png" />
+                  
+                    <p>Happy</p>
+                  </button>
+
+                  <button class="btn btn-success moodButton" id="sad" data-mood = "2">
+                    <img class="mood" src="./img/Sad.png" />
+                    <!-- mood id: 2 -->
+                    <p>Sad</p>
+                  </button>
+
+                  <button class="btn btn-success moodButton" id="love" data-mood = "3">
+                    <img class="mood" src="./img/Love.png" />
+                    <!-- mood id: 3 -->
+                    <p>Love</p>
+                  </button>
+
+                  <button class="btn btn-success moodButton" id="anger" data-mood = "4">
+                    <img class="mood" src="./img/Anger.png" />
+                    <!-- mood id: 4 -->
+                    <p>Anger</p>
+                  </button>
+
+                  <button class="btn btn-success moodButton" id="chill" data-mood = "5">
+                    <img class="mood" src="./img/Chill.png" />
+                    <!-- mood id: 5 -->
+                    <p>Chill</p>
+                  </button>
+
+                  <button class="btn btn-success moodButton" id="sleepy" data-mood = "6">
+                    <img class="mood" src="img/Sleepy.png" />
+                    <!-- mood id: 6 -->
+                    <p>Sleepy</p>
+
+
+
+
+<!-- // TEST BUTTON -->
+                    <button class="btn btn-success" id="go-btn" data-mood = "6">
+                      <img class="mood" src="img/Sleepy.png" />
+                      <!-- mood id: 6 -->
+                      <p>concerts</p>
+                    </button>
+
+
+
+
+                  </button>
+
+=======
     <div class="twinkling">
         <div class="container lucidity-container">
                 <div class="row"></div>
@@ -23,6 +111,7 @@
                     <a href="home.html" class="enterButton">Enter</a> 
                 </p>
                 </div>
+>>>>>>> 1f9e307e93508424e31003bab4fbcae089b9548e
                 </div>
             </div>
         </div>
