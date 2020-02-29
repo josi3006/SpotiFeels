@@ -92,7 +92,7 @@ section{
 
 /* Comment Buttons */
 
-.leaveComment{
+.leave-comment{
     display: flex;
     justify-content: center;
     font-family: 'Spartan';
@@ -103,7 +103,7 @@ section{
     border-radius: 6px;
     margin-top:10px;
 }
-.leaveComment:hover{
+.leave-comment:hover{
     color: black;
     background: white;
     font-family: 'Spartan';

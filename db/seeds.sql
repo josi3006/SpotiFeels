@@ -146,3 +146,8 @@ INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
 
  INSERT INTO tameimpala (artist_name, album_name, song_name, mood_id)
  VALUES ('Tame Impala', 'The Slow Rush' ,"One More Hour",6);
+
+
+
+ INSERT INTO comments (name, mood, songtitle, comment)
+ VALUES ('Zach', 'Happy' ,"One More Hour", "I love this Song");

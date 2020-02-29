@@ -9,8 +9,7 @@ var Comment = sequelize.define("comment", {
   name: Sequelize.STRING,
   mood: Sequelize.STRING,
   songtitle: Sequelize.STRING,
-  comment:  Sequelize.STRING,
-  created_at: Sequelize.DATE
+  // body:  Sequelize.STRING
 });
 
 console.log(Comment);
