@@ -1,9 +1,4 @@
 
-// const axios = require("axios");
-
-console.log('Whassup!');
-
-
 
 $("#go-btn").on("click", function (event) {
     event.preventDefault();
@@ -20,14 +15,7 @@ $("#go-btn").on("click", function (event) {
 
 function updatePage(res) {
 
-    console.log('you clicked it!');
 
-
-    // const concertArr = [];
-
-    // const testvenues = [];
-
-    // for (var i = 0; i < 5; i++) {
 
     const concertObject = {
          name: res._embedded.events[0]._embedded.venues[0].name,
@@ -36,15 +24,6 @@ function updatePage(res) {
          date: res._embedded.events[0].dates.start.localDate,
          tixURL: res._embedded.events[0].url
     }
-
-    
-
-    // testvenues.push(eachVenue);
-
-
-
-// console.log('this it????????????????????????');
-// console.log(testvenues);
 
 
 renderArr(concertObject);
@@ -61,27 +40,6 @@ function renderArr(concertObject) {
     show +=concertObject.date + "</a>";
  
 
-
     $(".spotifySection").append(show);
 
-
-
-
-    // for (var i = 0; i < 5; i++) {
-
-    //     const concertBuild = [
-    //         { venue: res._embedded.events[i]._embedded.venues[0].name },
-    //         { city: res._embedded.events[i]._embedded.venues[0].city.name },
-    //         { state: res._embedded.events[i]._embedded.venues[0].state.stateCode },
-    //         { date: res._embedded.events[i].dates.start.localDate },
-    //         { tixURL: res._embedded.events[i].url }
-    //     ];
-
-    //     concertArr.push(concertBuild);
-
-
-    // console.log(testvenues);
-
-
 };
-
