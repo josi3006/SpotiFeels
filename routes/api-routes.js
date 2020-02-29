@@ -2,7 +2,7 @@
 // =============================================================
 
 
-
+const Comment = require("../models/comment")
 // Comment routes
 
 module.exports = function(app) {
@@ -41,4 +41,5 @@ module.exports = function(app) {
   });
 
 };
+
 
