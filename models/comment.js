@@ -13,6 +13,7 @@ var Comment = sequelize.define("comment", {
   created_at: Sequelize.DATE
 });
 
+console.log(Comment);
 
 
 
