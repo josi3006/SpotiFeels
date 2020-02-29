@@ -1,5 +1,5 @@
 /* global moment */
-
+// const moment = require("moment");
 // When user clicks add-btn
 $("#postComment").on("click", function(event) {
   event.preventDefault();
@@ -10,7 +10,7 @@ $("#postComment").on("click", function(event) {
     mood: $("#commentMood").val().trim(),
     songtitle: $("#commentSong").val().trim(),
     comment: $("#commentBody").val().trim(),
-    created_at: moment().format("YYYY-MM-DD HH:mm:ss")
+    // created_at: moment().format("YYYY-MM-DD HH:mm:ss")
   };
 
   console.log(newComment);
@@ -27,7 +27,7 @@ $("#postComment").on("click", function(event) {
       row.append("<p>"+ newComment.mood + "</p>");
       row.append("<p>" + newComment.songtitle + "</p>");
       row.append("<p>" + newComment.commentBody + "</p>");
-      row.append("<p>At " + moment(newComment.created_at).format("h:mma on dddd") + "</p>");
+      // row.append("<p>At " + moment(newComment.created_at).format("h:mma on dddd") + "</p>");
 
       $("#comment-area").prepend(row);
 
@@ -54,12 +54,13 @@ $.get("/api/all", function(data) {
       row.append("<p>" + data[i].mood + "</p>");
       row.append("<p>" + data[i].songtitle + "</p>");
       row.append("<p>" + data[i].commentBody + "</p>");
-      row.append("<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "</p>");
+      // row.append("<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "</p>");
 
       $("#comment-area").prepend(row);
 
     }
-
   }
-
 });
+
+
+
