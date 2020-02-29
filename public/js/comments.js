@@ -23,7 +23,7 @@ $("#post-comment").on("click", function(event) {
       var row = $("<div>");
       row.addClass("fontColor");
 
-      row.append("<p>" + newComment.name + " commented: </p>");
+      row.append("<p>" + newComment.name + " </p>");
       row.append("<p>"+ newComment.mood + "</p>");
       row.append("<p>" + newComment.songtitle + "</p>");
       // row.append("<p>" + newComment.commentBody + "</p>");
@@ -49,7 +49,7 @@ $.get("/api/all", function(data) {
 
       var row = $("<div>");
       row.addClass("display");
-      row.attr("name","mood", "songtitle","commentBody" + i);
+      row.attr("name","mood", "songtitle", + i);
       $("#comment-area").append(row)
 
       row.append("<p>" + data[i].author + " commented.. </p>");
