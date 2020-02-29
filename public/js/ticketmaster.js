@@ -15,6 +15,8 @@ $("#go-btn").on("click", function (event) {
 
 function updatePage(res) {
 
+
+
     const concertObject = {
          name: res._embedded.events[0]._embedded.venues[0].name,
          city: res._embedded.events[0]._embedded.venues[0].city.name,
@@ -22,7 +24,7 @@ function updatePage(res) {
          date: res._embedded.events[0].dates.start.localDate,
          tixURL: res._embedded.events[0].url
     }
-    
+
 
 renderArr(concertObject);
 
