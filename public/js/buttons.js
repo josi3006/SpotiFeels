@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 $(window).on("load", () => {
     // console.log($(".moodButton"));
     $(".moodButton").each(function () {
@@ -21,9 +19,8 @@ $(window).on("load", () => {
         });
     });
 });
-=======
-=======
->>>>>>> 1f9e307e93508424e31003bab4fbcae089b9548e
+
+
 function (mood, cb) {
     $(".moodButtons").on("click", function (event) {
         event.preventDefault();
@@ -37,4 +34,4 @@ function (mood, cb) {
 });
 };
 
->>>>>>> c9cf2c9391d464014a5fbc90c03540648c243d19
+
