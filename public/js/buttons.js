@@ -1,3 +1,4 @@
+
 function (mood, cb) {
     $(".moodButtons").on("click", function (event) {
         event.preventDefault();
@@ -10,3 +11,4 @@ function (mood, cb) {
     });
 });
 };
+
