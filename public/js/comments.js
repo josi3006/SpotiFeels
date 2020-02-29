@@ -21,7 +21,7 @@ $("#postComment").on("click", function(event) {
     .then(function() {
 
       var row = $("<div>");
-      row.addClass("comment");
+      row.addClass("fontColor");
 
       row.append("<p>" + newComment.name + " commented: </p>");
       row.append("<p>"+ newComment.mood + "</p>");
