@@ -52,7 +52,7 @@ $.get("/api/all", function(data) {
       row.attr("name","mood", "songtitle", + i);
       $("#comment-area").append(row)
 
-      row.append("<p>" + data[i].author + " commented.. </p>");
+      row.append("<p>" + data[i].name + "</p>");
       row.append("<p>" + data[i].mood + "</p>");
       row.append("<p>" + data[i].songtitle + "</p>");
       // row.append("<p>" + data[i].commentBody + "</p>");

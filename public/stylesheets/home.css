@@ -130,7 +130,7 @@ section{
 .spotifySection{
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 #pickedSong{
