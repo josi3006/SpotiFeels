@@ -1,3 +1,4 @@
+
 $(window).on("load", () => {
     // console.log($(".moodButton"));
     $(".moodButton").each(function () {
@@ -16,6 +17,5 @@ $(window).on("load", () => {
                 console.log(this)
             });
         });
-    });
-});
+
 
