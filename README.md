@@ -1,7 +1,7 @@
 
 ## .Lucidity
 
-Deployed at "***"
+Deployed at "https://spotifeels.herokuapp.com/home.html"
 
 ## Description
 Where your mood and Tame Impala meet.  We have crated a music generator that gives you a song based on your current mood.  You can see upcoming shows, listen to all thier songs, via a spotify widget, and interact with other fans in the comment section.  
