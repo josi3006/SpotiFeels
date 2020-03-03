@@ -15,7 +15,27 @@ section{
 
 /* Button CSS */
 
-#postComment{
+#post-comment{
+    display: flex;
+    justify-content: center;
+    font-family: 'Spartan';
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    border: 4px solid white;
+    border-radius: 6px;
+    margin-top:10px;
+    box-shadow: 2px 1px 2px gray;
+}
+
+#post-comment:hover{
+    color: black;
+    background: white;
+    font-family: 'Spartan';
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+#comment-btn {
     display: flex;
     justify-content: center;
     font-family: 'Spartan';
@@ -26,8 +46,7 @@ section{
     border-radius: 6px;
     margin-top:10px;
 }
-
-#postComment:hover{
+#comment-btn:hover{
     color: black;
     background: white;
     font-family: 'Spartan';
@@ -48,12 +67,22 @@ section{
 
 /* Sections */
 
-/* .commentSection{
+.commentSection{
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     margin-top: 25px;
     height: 100px; 
-} */
+}
+#comment-display{
+    color: white;
+    justify-content: right;
+    margin-top:25px;
+    height: 100px; 
+}
+.comment-page{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 /* Comments  */
@@ -86,8 +115,6 @@ section{
 .comment-container{
    padding-right: 0;
    padding-left: 0;
-
-
 }
   
 
