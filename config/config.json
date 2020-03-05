@@ -1,21 +1,25 @@
 {
   "development": {
     "username": "root",
+<<<<<<< Updated upstream
     "password": "!@Galaxy",
+=======
+    "!@Galaxy": "!@Galaxy",
+>>>>>>> Stashed changes
     "database": "tamedb",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "password",
+    "!@Galaxy": "!@Galaxy",
     "database": "tamedb",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "password",
+    "!@Galaxy": "!@Galaxy",
     "database": "tamedb",
     "host": "127.0.0.1",
     "dialect": "mysql",
