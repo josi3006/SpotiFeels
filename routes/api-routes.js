@@ -4,6 +4,7 @@
 
 const Comment = require("../models/comment.js")
 
+
 // Comment routes
 
 module.exports = function(app) {
@@ -33,7 +34,7 @@ module.exports = function(app) {
       name: req.body.name,
       mood: req.body.mood,
       songtitle: req.body.songtitle,
-      body: req.body.commentBody,
+      // body: req.body.commentBody,
 
     }).then(function(results) {
       // `results` here would be the newly created comment

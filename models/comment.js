@@ -1,8 +1,8 @@
 
 // // This may be confusing but here Sequelize (capital) references the standard library
-// var Sequelize = require("sequelize");
+var Sequelize = require("sequelize");
 // // sequelize (lowercase) references our connection to the DB.
-// var sequelize = require("../config/connection.js");
+var sequelize = require("../config/connection.js");
 
 
 // Creates a "comment" model that matches up with DB
@@ -29,7 +29,7 @@ module.exports = function(sequelize, DataTypes) {
     name: Sequelize.STRING,
     mood: Sequelize.STRING,
     songtitle: Sequelize.STRING,
-    comment:  Sequelize.STRING,
+    // comment:  Sequelize.STRING,
     created_at: Sequelize.DATE
   });
 
