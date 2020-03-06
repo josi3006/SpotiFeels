@@ -1,4 +1,5 @@
 
+
 // $(window).on("load", () => {
 //     // console.log($(".moodButton"));
 //     $(".moodButton").each(function () {
@@ -30,5 +31,21 @@ $(function () {
 
         console.log('Mood is: ' + mood);
 
+        var queryString = "SELECT * FROM tameimpala WHERE mood_id = " + mood + " ORDER BY Rand() LIMIT 1";
+
+        console.log('query is: ' + queryString);
+
+
     })
-})
+
+});
+
+
+
+
+// function updatePage(result) {
+//     console.log('Response is: ' + result)
+//     res.json();
+// };
+
+
