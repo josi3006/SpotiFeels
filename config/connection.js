@@ -3,6 +3,11 @@
 var Sequelize = require("sequelize");
 var mysql = require("mysql");
 
+
+
+// Was  !@Galaxy
+
+
 // Creates mySQL connection using Sequelize, the empty string in the third argument spot is our password.
 var sequelize = new Sequelize("tamedb", "root", "!@Galaxy", {
   host: "localhost",
