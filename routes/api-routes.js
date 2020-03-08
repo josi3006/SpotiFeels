@@ -2,12 +2,14 @@
 // =============================================================
 
 
-const Comment = require("../models/comment")
+const Comment = require("../models/comment.js")
+
 // Comment routes
 
 module.exports = function(app) {
 
   // Get all comments
+
   app.get("/api/all", function(req, res) {
 
     // Finding all comments, and then returning them to the user as JSON.
@@ -18,29 +20,26 @@ module.exports = function(app) {
       // results are available to us inside the .then
       res.json(results);
       console.log(results);
-    });
-
+      });
   });
 
-  // Add a comment
+
+ 
   app.post("/api/new", function(req, res) {
 
     console.log("Comment Data");
     console.log(req.body);
 
     Comment.create({
-      name: req.body.author,
+      name: req.body.name,
       mood: req.body.mood,
       songtitle: req.body.songtitle,
-      comment: req.body.commentBody,
-      // created_at: req.body.created_at
+      body: req.body.commentBody,
+
     }).then(function(results) {
       // `results` here would be the newly created comment
       res.end();
     });
 
   });
-
-};
-
-
+}

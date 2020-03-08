@@ -26,27 +26,43 @@
       </div>
     </nav>
 
-    <div class="container comment-container">
+    <!-- <div class="container comment-container"> -->
 
-    
+    <div class="comment-page">
       <section class="commentSection">
 
-        <div class="col-sm-8 ">
-          <p class="fontColor">Name</p>
+        <div class="col-sm-12 ">
+
+          <p class="fontColor"></p>
             <input class="form-control" type="text" id="commentName" placeholder="Name??">
               <br>
-          <p class="fontColor">Mood</p>
+          <p class="fontColor"></p>
             <input class="form-control" type="text" id="commentMood" placeholder=" Mood??">
               <br>
-          <p class="fontColor">Song Title</p>
+          <p class="fontColor"></p>
             <input class="form-control" type="text" id="commentSong" placeholder="Song??">
               <br>
-          <p class="fontColor">Comment</p>
-              <textarea class="form-control" rows="3" id="commentBody" placeholder="Thoughts??"></textarea>
-              <a href="comments.html" id="postComment">Post Your Comment</a> 
-      </section>
-    </div>
 
+              <a id="post-comment" >Post to Mood Log</a> 
+
+              <!-- <a href="comments.html" id="comment-btn" >View The Comments</a>  -->
+              
+      </section>
+      <section id="comment-display">
+      <div class="col-sm-6">
+        <h2>Comments</h2>
+        <hr>
+        
+         <div class="card-body">
+          <div id="comment-area"></div>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+  </div>
+</div>
+  
       
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
