@@ -1,6 +1,6 @@
 //  global moment 
 // When user clicks add-btn
-$("#post-comment").on("click", function(event) {
+$("#post-comment").on("click", function (event) {
   event.preventDefault();
 
   // Make a newComment object
@@ -13,18 +13,18 @@ $("#post-comment").on("click", function(event) {
   };
 
   console.log(newComment);
-  
+
 
   // Send an AJAX POST-request with jQuery
   $.post("/api/new", newComment)
     // On success, run the following code
-    .then(function() {
+    .then(function () {
 
       var row = $("<div>");
       row.addClass("fontColor");
 
       row.append("<p>" + newComment.name + " </p>");
-      row.append("<p>"+ newComment.mood + "</p>");
+      row.append("<p>" + newComment.mood + "</p>");
       row.append("<p>" + newComment.songtitle + "</p>");
       // row.append("<p>" + newComment.commentBody + "</p>");
       // row.append("<p>At " + moment(newComment.created_at).format("h:mma on dddd") + "</p>");
@@ -41,7 +41,7 @@ $("#post-comment").on("click", function(event) {
 });
 
 // When the page loads, grab all of our comments
-$.get("/api/all", function(data) {
+$.get("/api/all", function (data) {
 
   if (data.length !== 0) {
 
@@ -49,7 +49,7 @@ $.get("/api/all", function(data) {
 
       var row = $("<div>");
       row.addClass("display");
-      row.attr("name","mood", "songtitle", + i);
+      row.attr("name", "mood", "songtitle", + i);
       $("#comment-area").append(row)
 
       row.append("<p>" + data[i].name + "</p>");
