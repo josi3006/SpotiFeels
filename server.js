@@ -1,8 +1,8 @@
 // Requiring necessary npm packages
 var express = require("express");
 var session = require("express-session");
-const axios = require("axios");
-const comment = require("./models/comment")
+// const axios = require("axios");
+// const comment = require("./models/comment")
 
 // Requiring passport as we've configured it
 // var passport = require("./config/passport");
